@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pajina interactiva</title>
+  </head>
+  <body>
+    <h1>Hola Bienbenido</h1>
+    <hr>
+    <!-- los botones ban de color azul con uun margen blanco -->
+    <h3>⚠️¡Antes de iniciar preciona el boton iniciar juego y coloca tu nombre!⚠️</h3>
+    <button type="button" name="button" onclick="inicio()">Iniciar juego</button>
+    <!--- Separacion--->
+<hr>
+
+    <ul>
+      <li>
+        <button type="button" name="button" onclick="nivel1();">Nivel 1</button>
+      </li>
+    </ul>
+    <div class="container">
+      <div class="botones">
+        <button type="button" name="button" onclick="murcielago();">Murcielago</button>
+        <button type="button" name="button" onclick="polilla();">Polilla</button>
+        <button type="button" name="button" onclick="mosquito();">Mosquito</button>
+        <button type="button" name="button" onclick="mosca();">Mosca</button>
+      </div>
+    </div>
+    <!--- Separacion --->
+    <hr>
+    <script>
+      //enpiesa la funcion
+      var nombre;
+      function inicio(){
+        alert("Bienvenido");
+        nombre = window.prompt("Ingresa tu nombre");
+      }
+
+      //Esta es la funcion de los botones
+      function nivel1(){
+        alert("Vuelo de noche, duermo en el día y nunca veras plumas en ala mía" + "\n" + "¿Qué es?");
+        //Boton  Murcielago
+      }
+      function murcielago(){
+        alert("Como lo supiestes" + "¡Eres todo un crack!" + " "+ nombre);
+      }
+      //Boton Polilla
+      function polilla(){
+        alert("Sigue intentando");
+      }
+      //Boton Mosquito
+      function mosquito(){
+        alert("Sigue intentando se que ¡PUEDES!");
+      }
+      //Boton Mosca
+      function mosca(){
+        alert("Cuando as visto una mosca en la noche yo nunca" + "\n" + "Sigue intentando!!!");
+      }
+    </script>
+    <!--- El texto de qui abajo se nesesita sentralisar --->
+    <p>⚠️⚠️PROXIMAMENTE⚠️⚠️ mas adivinanzas </p>
+  </body>
+</html>
